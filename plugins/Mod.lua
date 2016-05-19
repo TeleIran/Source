@@ -4,6 +4,7 @@ local function callback(extra, success, result)
 	vardump(success)
 end
 
+
 local function is_spromoted(chat_id, user_id)
   local hash =  'sprom:'..chat_id..':'..user_id
   local spromoted = redis:get(hash)
