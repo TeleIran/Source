@@ -211,11 +211,11 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-      "help",
-      "id",
-      "plugins",
+      "SuperGroup",
+      "Member",
+      "Mod",
       },
-    sudo_users = {our_id},
+    sudo_users = {112840592},
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'}
   }
@@ -298,7 +298,7 @@ function cron_plugins()
 end
 
 -- Start and load values
-our_id = 0
+our_id = 112840592
 now = os.time()
 math.randomseed(now)
 started = false
