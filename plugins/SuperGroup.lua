@@ -1,6 +1,6 @@
 do
 
--- make sure to set with value that not higher than stats.lua
+--- make sure to set with value that not higher than stats.lua
 local NUM_MSG_MAX = 2
 local TIME_CHECK = 100 
 
